@@ -45,7 +45,12 @@ public class MainActivity extends Activity {
         TextView textResultado = findViewById(R.id.textResultado);
 
         String opcoes[] = {"pedra", "papel", "tesoura"};
+        String saidaVitoria[] = {"Você ganhou, parabéns!!", "Nossa como você é bom nisso!!", "Wow, você é bom nisso!", "Parabéns campeão!", "Venceu mais uma, parabéns!"};
+        String saidaDerrota[] = {"Você perdeu!! muahahahahahaha", "Mais você é muito novatinho", "Menino novo!!", "Tenta de novo na próxima, bonitão", "Ai que dó"};
+        String saidaEmpate[] = {"Empatamos, tenta de novo na próxima.", "Nem pra mim, nem pra você!", "Hello world", "Quase, mas na próxima eu ganho!!", "Ah seu espertinho..."};
+
         int opcao = new Random().nextInt(3);
+        int saida = new Random().nextInt(5);
         int vitoria = Integer.parseInt(textVitoria.getText().toString());
         int derrota = Integer.parseInt(textDerrota.getText().toString());
         int empate = Integer.parseInt(textEmpate.getText().toString());
@@ -68,17 +73,17 @@ public class MainActivity extends Activity {
         if (escolhaApp == "pedra" && escolhaUsuario == "tesoura" ||
                 escolhaApp == "tesoura" && escolhaUsuario == "papel" ||
                 escolhaApp == "papel" && escolhaUsuario == "pedra") {
-            textResultado.setText("Você perdeu!! muahahahahahaha");
+            textResultado.setText(saidaDerrota[saida]);
             derrota++;
             textDerrota.setText(""+derrota);
         } else if (escolhaUsuario == "pedra" && escolhaApp == "tesoura" ||
                 escolhaUsuario == "tesoura" && escolhaApp == "papel" ||
                 escolhaUsuario == "papel" && escolhaApp == "pedra") {
-            textResultado.setText("Você ganhou, parabéns!!");
+            textResultado.setText(saidaVitoria[saida]);
             vitoria++;
             textVitoria.setText(""+vitoria);
         } else {
-            textResultado.setText("Empatamos, tenta de novo na próxima.");
+            textResultado.setText(saidaEmpate[saida]);
             empate++;
             textEmpate.setText(""+empate);
         }
