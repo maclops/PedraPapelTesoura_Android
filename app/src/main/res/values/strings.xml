@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">PedraPapelTesoura</string>
+    <string name="escolha_do_app">Escolha do App</string>
+    <string name="imagem_da_escolha_do_string_app_name">Imagem da escolha do @string/app_name</string>
+    <string name="escolha_uma_op_o_abaixo">Escolha uma opção abaixo</string>
+    <string name="escolha_do_usu_rio_pedra">Escolha do usuário: Pedra</string>
+    <string name="escolha_do_usu_rio_papel">Escolha do usuário: Papel</string>
+    <string name="escolha_do_usu_rio_tesoura">Escolha do usuário: Tesoura</string>
+    <string name="quantidade_de_vit_rias">Quantidade de vitórias</string>
+    <string name="vit_rias">Vitórias:</string>
+    <string name="quantidade_de_derrotas">Quantidade de derrotas</string>
+    <string name="derrotas">Derrotas:</string>
+    <string name="quantidade_de_empates">Quantidade de empates</string>
+    <string name="empates">Empates:</string>
+    <string name="quantidade_de_partidas_jogadas">Quantidade de partidas jogadas</string>
+    <string name="total">Total:</string>
+    <string name="_0">0</string>
+    <string name="_0a">0</string>
+    <string name="_0b">0</string>
+    <string name="_0c">0</string>
 </resources>
